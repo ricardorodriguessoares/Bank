@@ -4,4 +4,13 @@ public class Conta {
 	int agencia;
 	int numero;
 	String titular;
+	
+	//trabalhando com métodos
+	//o void nesse caso serve para não devolver nenhuma resposta sobre o método "depósito"
+	public void deposita(double valor) {
+		
+		//para somar o saldo da conta ao depósito
+		//o this serve para informar qual conta buscar o saldo
+		this.saldo = this.saldo + valor;
+	}
 }
