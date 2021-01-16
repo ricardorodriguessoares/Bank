@@ -7,28 +7,35 @@ public class TesteReferencias {
 			
 			System.out.println("Saldo da Primeira Conta: " + primeiraConta.saldo);
 			
-			//Criando referência para a Primeira conta
-			//Não foi criado um novo objeto e sim uma referência
+			//Criando referÃªncia para a Primeira conta
+			// Creating reference to the First account
+			//NÃ£o foi criado um novo objeto e sim uma referÃªncia
+			// A new object was not created, but a reference
 			Conta segundaConta = primeiraConta;
 			
 			System.out.println("Saldo da Segunda Conta: " + segundaConta.saldo);
 			
 			//atribuindo um "Cheque Especial"
+			// assigning an "Overdraft"
 			segundaConta.saldo +=100;
 			System.out.println("Saldo da Segunda Conta + Cheque Especial: " + segundaConta.saldo);
 			
-			//Verificando se as duas contas são as mesmas
+			//Verificando se as duas contas sÃ£o as mesmas
+			// Verifying that the two accounts are the same
 			System.out.println(primeiraConta.saldo);
 			
-			//Utilizando o if para saber se as duas são as mesmas.
+			//Utilizando o if para saber se as duas sÃ£o as mesmas.
+			// Using the if to see if the two are the same.
 			if(primeiraConta == segundaConta) {
-				System.out.println("São a mesma conta!");
+				System.out.println("SÃ£o a mesma conta!");
 			}else {
-				System.out.println("Não, são contas diferentes!");
+				System.out.println("NÃ£o, sÃ£o contas diferentes!");
 		}
 
-			//Confirmando que são duas referências para o mesmo Objeto
-			//imprimindo o local de armazenamento na memória
+			//Confirmando que sÃ£o duas referÃªncias para o mesmo Objeto
+			// Confirming that there are two references to the same object
+			//imprimindo o local de armazenamento na memÃ³ria
+			// printing the storage location in memory
 			System.out.println(primeiraConta);
 			System.out.println(segundaConta);
 		}
