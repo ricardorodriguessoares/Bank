@@ -1,4 +1,6 @@
-
+//Projeto de um Banco
+//Autor: Ricardo Rodrigues
+// Contact: ri.rodriguesoares@gmail.com / +55 11 961607406
 public class TesteReferencias {
 
 		public static void main(String [] args) {
