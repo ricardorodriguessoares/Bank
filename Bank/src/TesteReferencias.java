@@ -1,6 +1,4 @@
-//Projeto de um Banco
-//Autor: Ricardo Rodrigues
-// Contact: ri.rodriguesoares@gmail.com / +55 11 961607406
+
 public class TesteReferencias {
 
 		public static void main(String [] args) {
@@ -9,35 +7,28 @@ public class TesteReferencias {
 			
 			System.out.println("Saldo da Primeira Conta: " + primeiraConta.saldo);
 			
-			//Criando referÃªncia para a Primeira conta
-			// Creating reference to the First account
-			//NÃ£o foi criado um novo objeto e sim uma referÃªncia
-			// A new object was not created, but a reference
+			//Criando referência para a Primeira conta
+			//Não foi criado um novo objeto e sim uma referência
 			Conta segundaConta = primeiraConta;
 			
 			System.out.println("Saldo da Segunda Conta: " + segundaConta.saldo);
 			
 			//atribuindo um "Cheque Especial"
-			// assigning an "Overdraft"
 			segundaConta.saldo +=100;
 			System.out.println("Saldo da Segunda Conta + Cheque Especial: " + segundaConta.saldo);
 			
-			//Verificando se as duas contas sÃ£o as mesmas
-			// Verifying that the two accounts are the same
+			//Verificando se as duas contas são as mesmas
 			System.out.println(primeiraConta.saldo);
 			
-			//Utilizando o if para saber se as duas sÃ£o as mesmas.
-			// Using the if to see if the two are the same.
+			//Utilizando o if para saber se as duas são as mesmas.
 			if(primeiraConta == segundaConta) {
-				System.out.println("SÃ£o a mesma conta!");
+				System.out.println("São a mesma conta!");
 			}else {
-				System.out.println("NÃ£o, sÃ£o contas diferentes!");
+				System.out.println("Não, são contas diferentes!");
 		}
 
-			//Confirmando que sÃ£o duas referÃªncias para o mesmo Objeto
-			// Confirming that there are two references to the same object
-			//imprimindo o local de armazenamento na memÃ³ria
-			// printing the storage location in memory
+			//Confirmando que são duas referências para o mesmo Objeto
+			//imprimindo o local de armazenamento na memória
 			System.out.println(primeiraConta);
 			System.out.println(segundaConta);
 		}
