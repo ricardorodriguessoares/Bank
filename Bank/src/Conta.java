@@ -15,4 +15,13 @@ public class Conta {
 		//o this serve para informar qual conta buscar o saldo
 		this.saldo = this.saldo + valor;
 	}
+	
+	//Um novo método para sacar, usando o this para informar a conta e o if para averiguar se tem valor
+	public boolean saca(double valor) {
+		if(this.saldo >= valor) {
+			this.saldo = this.saldo - valor;
+			return true;
+		}else {
+			return false;
+		}
 }
