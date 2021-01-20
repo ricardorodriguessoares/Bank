@@ -14,6 +14,22 @@ public class TestaMetodo {
 		boolean conseguiuRetirar = contaDoRicardo.saca(20);
 		System.out.println(contaDoRicardo.saldo);
 		System.out.println(conseguiuRetirar);
+		
+		//Novo obeto criado para transferir valor
+		Conta contaDaLuciana = new Conta();
+		contaDaLuciana.deposita(1000);
+		
+		//Ao executar o saldo ficou em R$ 700,00
+		//depois inclui o If para saber se haviua valor em conta sim ou não
+		if (contaDaLuciana.transfere(3000, contaDoRicardo)) {
+			System.out.println("Transferência realizada com Sucesso ");
+			}else {
+				System.out.println("Faltou Dinheiro em Conta ");
+			}
+		System.out.println(contaDaLuciana.saldo);
+		
+		//execultamos novamente o System para verificar se o valor foi transferido
+		System.out.println(contaDoRicardo.saldo);
 	}
 
 }
