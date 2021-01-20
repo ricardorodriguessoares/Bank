@@ -24,4 +24,17 @@ public class Conta {
 		}else {
 			return false;
 		}
+		
+	}
+	public boolean transfere(double valor, Conta destino) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			destino.deposita(valor);
+			return true;
+		}else {
+			//retur é uma palavra chave que para a execusão do método
+			//portando colocar o else é opcional, no caso optei por colocar
+			return false;
+		}
+}
 }
