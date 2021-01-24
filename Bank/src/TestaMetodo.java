@@ -30,6 +30,9 @@ public class TestaMetodo {
 		
 		//execultamos novamente o System para verificar se o valor foi transferido
 		System.out.println(contaDoRicardo.saldo);
+		
+		contaDoRicardo.titular = "Ricardo Rodrigues ";
+		System.out.println(contaDoRicardo.titular);
 	}
 
 }
